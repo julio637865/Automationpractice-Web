@@ -1,37 +1,31 @@
 class CadastroPage < SitePrism::Page
-    #cadastro de login 
+
+ set_url '/'
+ element :email_de_cadastro,         '#email_create'
+ element :criar_conta,               '#SubmitCreate'
+ element :genero_senhor,             '#id_gender1'
+ element :primeiro_nome,             '#customer_firstname'
+ element :segundo_Nome,              '#customer_lastname'
+ element :senha,                     '#passwd'
+ element :complemento,               '#company'
+ element :endereco,                  '#address1'
+ element :edereco_linha,             '#address2' 
+ element :cidade,                    '#city'
+ element :cep,                       '#postcode'
+ element :infromacoes_adicionais,    '#other'
+ element :telefone,                  '#phone'
+ element :telefone_celular,          '#phone_mobile'  
+ element :endereco_alternativo,      '#alias'
+
+end
+
+class LoginPage < SitePrism::Page
  
- element :Email,                  '#email_create'
- element :Criar_conta,            'input[id="email_create"]'
- element :Sexo_do_usuario,        '#SubmitCreate'
- element :Nome,                   '#customer_firstname'
- element :Segundo_Nome,           '#customer_lastname'
- element :Senha,                  '#passwd'
- element :Complemento,            '#company'
- element :Endereço,               '#address1'
- element :Edereço_linha,          '#address2' 
- element :Cidade,                 '#city'
- element :CEP,                    '#postcode'
- element :Informações_Adicionais, '#other'
- element :Telefone,               '#phone'
- element :Telefone_Celular,       '#phone_mobile'  
- element :Endereço_Alternativo,   '#alias'
-
-    #login com conta criada 
- element :Email_Login,            'input[id="email"]' 
- element :Email_Login,            'input[id="email"]'
- element :Senha,                  'input[id="passwd"]'
-
-    #login com email e senha invalidos 
- element :Email_Invalido,         'input[id="email"]'
- element :Senha_Invalida,         'input[id="passwd"]'
-
-    #login com senha invalida 
- element :Email_Valido,           'input[id="email"]'
- element :Senha_Invalida,         'input[id="passwd"]'
-
-    #login com email invalido 
- element :Email_Invalida,         'input[id="email"]'
- element :Senha_Valida,           'input[id="passwd"]'
+ element :senha,                  'input[id="passwd"]'
+ element :email_login,            'input[id="email"]'
+ element :email_invalido,         'input[id="email"]'
+ element :email_valido,           'input[id="email"]'
+ element :senha_invalida,         'input[id="passwd"]'
+ element :senha_valida,           'input[id="passwd"]'
 
 end 
