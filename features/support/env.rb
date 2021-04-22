@@ -5,6 +5,7 @@ require 'selenium-webdriver'
 require 'report_builder'
 require 'site_prism'
 require 'allure-cucumber'
+require 'rspec'
 
 Capybara.configure do |config|
     config.app_host = 'http://automationpractice.com/index.php'

@@ -138,11 +138,11 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  allure-cucumber (= 2.13.6.3)
+  allure-cucumber
   capybara
   chromedriver-helper
   cucumber
-  httparty (~> 0.18.1)
+  httparty
   report_builder
   rspec
   selenium-webdriver
