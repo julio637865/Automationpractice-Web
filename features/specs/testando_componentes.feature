@@ -1,6 +1,6 @@
 #language: pt
 
-@teste
+
 Funcionalidade: Validando componentes na tela do site  
 
 Cenario: Validar que eu consiga passar os banners na home

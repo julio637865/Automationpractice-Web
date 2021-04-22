@@ -8,7 +8,7 @@ Cenario: Validar que eu consiga fazer um cadastro no site
 Dado que eu acesso o site  
 Quando eu clico em fazer um cadastro 
 E preencho minhas informações  
-| email                  | julioc.tasssasde1@gmail.com         |            
+| email                  | julioc.98498484984@gmail.com        |            
 | nome                   | Julio                               |
 | segundo_Nome           | Cesar                               |
 | senha                  | @Ju95821488                         |
