@@ -2,7 +2,7 @@
 
 
 Funcionalidade: Criando cadastro 
-@cadastro
+
 Cenario: Validar que eu consiga fazer um cadastro no site 
 
 Dado que eu acesso o site  
