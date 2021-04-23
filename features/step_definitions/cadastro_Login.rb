@@ -38,10 +38,10 @@ Quando('preencho minhas informações') do |table|
   @cadastro.endereco_alternativo.set   info[:endereço_Alternativo  ]
 end
 Quando('clico em finalizar cadastro') do
-  #click_on 'Register'
+  click_on 'Register'
 end
 Então('eu finalizo meu cadastro com sucesso') do
-  #expect(page).to have_content ('My account')
+  expect(page).to have_content ('My account')
 end
 #Cenario: Validar login no site 
 Quando('eu clico em fazer login') do
