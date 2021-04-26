@@ -30,12 +30,18 @@ class Header < SitePrism::Page
 
     element :dresses,                       'a[title="Dresses"]'
     element :summerDresses,                 'a[title="Summer Dresses"]'
-   
 end
 
 class FiltroTamanho < SitePrism::Page
 
-element :produto,                   'img[title="Blouse"]'
-
+    element :produto,                          'img[title="Blouse"]'
 end 
 
+class DadosDaConta < SitePrism::Page
+
+    element :minha_conta,                       'div[class="header_user_info"]'
+    element :email,                             'input[id="email"]'
+    element :senha,                             'input[id="passwd"]'         
+    element :entrar,                            'button[id="SubmitLogin"]'
+    element :dados_da_conta,                    'i[class="icon-user"]'
+end 

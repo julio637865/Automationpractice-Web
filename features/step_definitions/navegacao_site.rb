@@ -16,10 +16,10 @@ Quando('clico em comprar um produto') do
   @carrinho = ProdutoNoCarrinhoPage.new
   @carrinho.botao_women.click
   @carrinho.produto_blouse.click
-  sleep 7
+  sleep 10
   within_frame(find('iframe[class="fancybox-iframe"]')) do #---> METODO PARA INTERAGIR COM IFRAME
      click_on  'Add to cart'   
-    sleep 7   
+    sleep 10  
   end
 end
 Quando('entro no carrinho') do

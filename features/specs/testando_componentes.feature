@@ -42,20 +42,16 @@ Dado que eu acesso o site
 Quando entro na header do site   
 Então eu consigo pesquisar por um produto 
 
-
 Cenario: Validar que seja possível escolher o tamanho de um produto 
 
 Dado que eu acesso o site   
 Quando entro na tela de um produto  
 Então eu eu consigo selecionar o tamanho do produto da minha preferência  
 
-@teste
 Cenario: Validar navegação entre as informações da minha conta 
 
 Dado que eu acesso o site 
 Quando entro na minha conta 
-| Email_Login            | julioc.9765@gmail.com                |
-| Senha                  | @Ju95821488                          |
 E entro nas informações da conta 
 Então eu navego pelas minhas informações no site
 

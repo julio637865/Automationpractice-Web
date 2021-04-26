@@ -83,21 +83,25 @@ end
 Quando('entro na tela de um produto') do
   @filtroTamanho = FiltroTamanho.new
   @filtroTamanho.produto.click
-  sleep 2
+  sleep 5
 end
 Então('eu eu consigo selecionar o tamanho do produto da minha preferência') do
   within_frame(find('iframe[class="fancybox-iframe"]')) do 
-     sleep 2
+    sleep 5
     find('#uniform-group_1').all(:css, 'option').find { |o| o.value == '1' }.select_option
-    expect(page).to have_content "Size"
+    sleep 5
   end 
 end
 
 #Cenario: Validar navegação entre as informações da minha conta 
 Quando('entro nas informações da conta') do
-  
+  @meusdados = DadosDaConta.new
+  @meusdados.minha_conta.click
+  @meusdados.email.set  'julioc.9765@gmail.com'
+  @meusdados.senha.set  '@Ju95821488'
+  @meusdados.entrar.click
+  @meusdados.dados_da_conta.click
 end
-
 Então('eu navego pelas minhas informações no site') do
-  
+  expect(page).to have_content 'YOUR PERSONAL INFORMATION'
 end

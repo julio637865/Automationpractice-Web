@@ -8,6 +8,7 @@ Dado que eu acesso o site
 Quando entro na categoria de produto  
 Então eu visualizo o Breadcrumb acompanhando o caminho da navegação
 
+
 Cenario: Validar que seja possível incluir um produto no carrinho  
  
 Dado que eu acesso o site
