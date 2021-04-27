@@ -1,10 +1,10 @@
 # Ter instalado 
 
-> Ruby
+- Ruby
 
-> Bundler 
+- Bundler 
 
-https://rubyinstaller.org/downloads/
+acesse url: https://rubyinstaller.org/downloads/
 
 gem install bundler
 
