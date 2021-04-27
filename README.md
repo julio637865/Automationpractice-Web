@@ -6,6 +6,7 @@
 
 acesse url: https://rubyinstaller.org/downloads/
 
+-------
 gem install bundler
-
+-------
 
