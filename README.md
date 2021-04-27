@@ -1,7 +1,8 @@
 # Ter instalado 
 
-Ruby 
-Bundler 
+> Ruby
+
+> Bundler 
 
 https://rubyinstaller.org/downloads/
 
