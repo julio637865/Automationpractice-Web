@@ -1,13 +1,22 @@
 # Ter instalado 
 
 - Ruby
+- Bundler 
 
 acesse url: https://rubyinstaller.org/downloads/
 
-- Bundler 
+> É importante ter o bundler na maquina para instalar as Gems do projeto 
+basta rodar o comando a baixo e pronto. 
 
 ````
 gem install bundler
+````
 
+> Agora para instalar as gems do projeto 
+deve rodar o comando 
+
+````
+bundle install
+````
 
 
