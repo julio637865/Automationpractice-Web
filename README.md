@@ -1,4 +1,4 @@
-# Dependências para rodar o Teste 
+# Dependências para rodar os Testes 
 
 - Ruby
 - Bundler 
