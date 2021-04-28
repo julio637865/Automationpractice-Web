@@ -1,4 +1,4 @@
-# Dependencias para rodar o teste 
+# Dependências para rodar o Teste 
 
 - Ruby
 - Bundler 
@@ -6,7 +6,7 @@
 acesse url: https://rubyinstaller.org/downloads/
 
 É importante ter o bundler na maquina para instalar as Gems do projeto, 
-para instalar o bundler basta rodar o comando a baixo e pronto. 
+para instalar o bundler basta rodar o comando a baixo. 
 
 ````
 gem install bundler
