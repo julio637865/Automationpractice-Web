@@ -25,4 +25,4 @@ Fazer o dowload do chromedriver pelo link:
 
 https://chromedriver.storage.googleapis.com/index.html
 
-se for Windows fazer a configuração da variável de ambiente. 
+Se for Windows fazer a configuração da variável de ambiente. 
