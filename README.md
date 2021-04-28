@@ -21,7 +21,7 @@ bundle install
 
 # Browser
 
-fazer o dowload do chromedriver pelo link
+fazer o dowload do chromedriver pelo link:
 
 https://chromedriver.storage.googleapis.com/index.html
 
