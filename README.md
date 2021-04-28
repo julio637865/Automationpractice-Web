@@ -19,4 +19,10 @@ deve rodar o comando
 bundle install
 ````
 
+# Browser
 
+fazer o dowload do chromedriver pelo link
+
+https://chromedriver.storage.googleapis.com/index.html
+
+se for Windows fazer a configuração da variavel de ambiente. 
