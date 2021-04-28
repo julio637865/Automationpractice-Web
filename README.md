@@ -1,4 +1,4 @@
-## Dependencias para rodar o teste 
+# Dependencias para rodar o teste 
 
 - Ruby
 - Bundler 
@@ -19,7 +19,7 @@ deve rodar o comando
 bundle install
 ````
 
-# Browser
+## Browser
 
 Fazer o dowload do chromedriver pelo link:
 
