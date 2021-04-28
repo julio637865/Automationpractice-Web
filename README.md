@@ -2,9 +2,12 @@
 
 - Ruby
 
-- Bundler 
-
 acesse url: https://rubyinstaller.org/downloads/
+
+- Bundler 
 
 ````
 gem install bundler
+
+
+
