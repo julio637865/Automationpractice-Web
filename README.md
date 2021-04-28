@@ -1,4 +1,4 @@
-# Ter instalado 
+## Dependencias para rodar o teste 
 
 - Ruby
 - Bundler 
@@ -21,7 +21,7 @@ bundle install
 
 # Browser
 
-fazer o dowload do chromedriver pelo link:
+Fazer o dowload do chromedriver pelo link:
 
 https://chromedriver.storage.googleapis.com/index.html
 
