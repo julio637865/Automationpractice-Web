@@ -21,10 +21,6 @@ bundle install
 
 ## Browser
 
-Fazer o dowload do chromedriver pelo link:
-
-versão 90.0.4430.24
-
-https://chromedriver.storage.googleapis.com/index.html
+Fazer o dowload do chromedriver na versão 90.0.4430.24 pelo link: https://chromedriver.storage.googleapis.com/index.html
 
 Se for Windows fazer a configuração da variável de ambiente. 
