@@ -7,7 +7,7 @@ Cenario: Criação de cadastro
 Dado que eu acesso o site  
 Quando eu clico em fazer um cadastro 
 E preencho minhas informações  
-| email                  | juliocs.2as426@gmail.com            |            
+| email                  | juliocesartestess@gmail.com         |            
 | nome                   | Julio                               |
 | segundo_Nome           | Cesar                               |
 | senha                  | @Ju95821488                         |
