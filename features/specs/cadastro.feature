@@ -1,13 +1,13 @@
 #language:pt
 
 Funcionalidade: Criando cadastro 
-@teste
+
 Cenario: Criação de cadastro 
 
 Dado que eu acesso o site  
 Quando eu clico em fazer um cadastro 
 E preencho minhas informações  
-| email                  | julioc.s1s8d51sd@gmail.com          |            
+| email                  | juliocs.2as426@gmail.com            |            
 | nome                   | Julio                               |
 | segundo_Nome           | Cesar                               |
 | senha                  | @Ju95821488                         |
@@ -22,3 +22,4 @@ E preencho minhas informações
 | endereço_Alternativo   | São paulo                           |
 E clico em finalizar cadastro 
 Então eu finalizo meu cadastro com sucesso 
+

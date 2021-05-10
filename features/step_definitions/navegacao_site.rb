@@ -16,10 +16,9 @@ Quando('clico em comprar um produto') do
   @carrinho = ProdutoNoCarrinhoPage.new
   @carrinho.botao_women.click
   @carrinho.produto_blouse.click
-  sleep 10
+  
   within_frame(find('iframe[class="fancybox-iframe"]')) do #---> METODO PARA INTERAGIR COM IFRAME
      click_on  'Add to cart'   
-    sleep 10  
   end
 end
 Quando('entro no carrinho') do
@@ -46,7 +45,6 @@ Quando('entro nos links de rede social') do
 end
 Então('entro na rede social do site') do
   page.has_link?('Google')
-  sleep 2 
 end
 
 

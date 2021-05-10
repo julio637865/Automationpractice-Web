@@ -11,7 +11,6 @@ Dado('que eu acesso o site') do
     info = table.rows_hash
     @cadastro.email_de_cadastro.set      info[:email                ]     
     @cadastro.criar_conta.click  
-    sleep  2
     @cadastro.genero_senhor.click 
     @cadastro.primeiro_nome.set          info[:nome                 ] 
     @cadastro.segundo_Nome.set           info[:segundo_Nome         ]

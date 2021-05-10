@@ -2,15 +2,11 @@
 Quando('eu clico no botão para passar para o proximo banner na home') do
   @Banner = BannerHome.new
   @Banner.passa_para_direita.click
-  sleep 1
   @Banner.passa_para_direita.click
-  sleep 1
   @Banner.passa_para_direita.click
-  sleep 1
 end  
 Então('eu vejo o proximo banner') do
   @Banner.passa_para_esquerda.click
-  sleep 1
 end
 
 #Cenario: Validar que buscando por um produto seja exibido 5 itens apenas na tela de busca 
@@ -25,23 +21,17 @@ end
 #Cenario: validar que seja possivel clicar nos banners de promoção no rodapé do site 
 Quando('eu clico nos banners  no rodapé do site') do
   @Bannersrodape = BannersRodape.new
-  sleep 1
   @Bannersrodape.banner1.click
-  sleep 1
   visit '/'
   @Bannersrodape.banner2.click
-  sleep 1
   visit '/'
   @Bannersrodape.banner3.click
-  sleep 1
   visit '/'
   @Bannersrodape.banner4.click
-  sleep 1
   visit '/'
 end  
 Então('eu sou direcionado para cada um') do
   @Bannersrodape.banner5.click
-  sleep 1
   visit '/'
 end
 
@@ -51,7 +41,6 @@ Quando('eu procuro por um produto') do |table|
   valor = table.rows_hash
   @Filtro_preço.buscar_por.set valor[:Produto]
   @Filtro_preço.click_lupa.click
-  sleep 2
 end
 Quando('depois eu filtro os produtos exibidos pelo menor preço') do
   find('#uniform-selectProductSort').all(:css, 'option').find { |o| o.value == 'price:asc' }.select_option
@@ -83,13 +72,11 @@ end
 Quando('entro na tela de um produto') do
   @filtroTamanho = FiltroTamanho.new
   @filtroTamanho.produto.click
-  sleep 5
+ 
 end
 Então('eu eu consigo selecionar o tamanho do produto da minha preferência') do
   within_frame(find('iframe[class="fancybox-iframe"]')) do 
-    sleep 5
     find('#uniform-group_1').all(:css, 'option').find { |o| o.value == '1' }.select_option
-    sleep 5
   end 
 end
 

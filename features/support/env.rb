@@ -10,7 +10,7 @@ require 'rspec'
 Capybara.configure do |config|
     config.app_host = 'http://automationpractice.com/index.php'
     config.default_driver = :selenium_chrome 
-    config.default_max_wait_time = 1
+    config.default_max_wait_time = 15
 end
 
 AllureCucumber.configure do |config|
