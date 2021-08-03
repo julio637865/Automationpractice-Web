@@ -65,6 +65,7 @@ GEM
       cucumber-cucumber-expressions (~> 10.3, >= 10.3.0)
       cucumber-messages (~> 13.0, >= 13.0.1)
     diff-lcs (1.4.4)
+    ffi (1.14.2)
     ffi (1.14.2-x64-mingw32)
     httparty (0.18.1)
       mime-types (~> 3.0)
@@ -84,6 +85,8 @@ GEM
     multi_test (0.1.2)
     multi_xml (0.6.0)
     nokogiri (1.11.1-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.11.1-x86_64-linux)
       racc (~> 1.4)
     protobuf-cucumber (3.10.8)
       activesupport (>= 3.2)
@@ -113,6 +116,7 @@ GEM
       rspec-support (~> 3.10.0)
     rspec-support (3.10.2)
     rubyzip (2.3.0)
+    rufo (0.13.0)
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
@@ -128,6 +132,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    useragent (0.16.10)
     uuid (2.3.9)
       macaddr (~> 1.0)
     xpath (3.2.0)
@@ -136,6 +141,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   allure-cucumber
@@ -145,8 +151,10 @@ DEPENDENCIES
   httparty
   report_builder
   rspec
+  rufo
   selenium-webdriver
   site_prism
+  useragent
 
 BUNDLED WITH
-   2.2.15
+   2.2.25

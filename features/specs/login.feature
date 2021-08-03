@@ -1,41 +1,29 @@
-#language: pt
+Feature: Login
 
-@teste
-Funcionalidade: Teste de login 
+    Scenario: Valid login
+        Given the user to access the login page
+        When he fills in valid login and password
+        | email_login    | julioc.9765@gmail.com |
+        | password_login | @Ju95821488           |
+        Then he is able to log in to the platform
 
-Cenario: Validar login no site 
+    Scenario: Login with invalid email and password
+        Given the user to access the login page
+        When he fills in invalid email and password
+        | email_login    | julioteste@gmail.com. |
+        | password_login | @Ju958214888as8       |
+        Then he cannot login
 
-Dado que eu acesso o site  
-Quando eu clico em fazer login 
-E preecho email e senha validos 
-| Email_Login            | julioc.9765@gmail.com                |
-| Senha                  | @Ju95821488                          |
-Então eu realizo login com sucesso 
+    Scenario: login with invalid password
+        Given the user to access the login page
+        When he fills in invalid password
+        | email_login    | julioc.9755@gmail.com |
+        | password_login | @Ju95821488..         |
+        Then he cannot login
 
-
-Cenario: Validar login com email e senha invalidos  
-
-Dado que eu acesso o site 
-Quando eu clico em fazer login 
-E preecho login com email e senha invalidos
-| Email_Invalida          | julioteste@gmail.com.               |
-| Senha_Invalida          | @Ju958214888as8                     |
-Então eu não consigo realizar login 
-
-Cenario: Validar login com email valido e senha invalida 
-
-Dado que eu acesso o site 
-Quando eu clico em fazer login 
-E preecho email valido e login invalido  
-| Email_Valido          | julioc.9755@gmail.com                 |
-| Senha_Invalida        | @Ju95821488..                         |
-Então eu não realizo o meu login  
-
-Cenario: Validar login com email invalido e senha valida 
-
-Dado que eu acesso o site 
-Quando eu clico em fazer login 
-E preecho email invalido e login valido  
-| Email_Invalida          | julio42@gmail.com.                  |
-| Senha_Valida            | @Ju95821488                         |
-Então eu não consigo fazer login 
+    Scenario: login with invalid email
+        Given the user to access the login page
+        When he fills an invalid email
+        | email_login    | julio42@gmail.com. |
+        | password_login | @Ju95821488        |
+        Then he cannot login
